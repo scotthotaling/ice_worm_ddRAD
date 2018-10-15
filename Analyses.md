@@ -264,29 +264,29 @@ compoplot(final.dapc.ice, only.grp=NULL, subset=NULL, new.pred=NULL, col=c("red"
 			
 	> Repeat 25 times and re-name the output each time so it does not get overwritten
 	
-mv 1.5.1.oneSNP.Admix.1.P run25.Admix.k1.P
-mv 1.5.1.oneSNP.Admix.2.P run25.Admix.k2.P
-mv 1.5.1.oneSNP.Admix.3.P run25.Admix.k3.P
-mv 1.5.1.oneSNP.Admix.4.P run25.Admix.k4.P
-mv 1.5.1.oneSNP.Admix.5.P run25.Admix.k5.P
-mv 1.5.1.oneSNP.Admix.6.P run25.Admix.k6.P
-mv 1.5.1.oneSNP.Admix.7.P run25.Admix.k7.P
-mv 1.5.1.oneSNP.Admix.8.P run25.Admix.k8.P
-mv 1.5.1.oneSNP.Admix.9.P run25.Admix.k9.P
-mv 1.5.1.oneSNP.Admix.10.P run25.Admix.k10.P
-mv 1.5.1.oneSNP.Admix.11.P run25.Admix.k11.P
-mv 1.5.1.oneSNP.Admix.12.P run25.Admix.k12.P
-mv 1.5.1.oneSNP.Admix.1.Q run25.Admix.k1.Q
-mv 1.5.1.oneSNP.Admix.2.Q run25.Admix.k2.Q
-mv 1.5.1.oneSNP.Admix.3.Q run25.Admix.k3.Q
-mv 1.5.1.oneSNP.Admix.4.Q run25.Admix.k4.Q
-mv 1.5.1.oneSNP.Admix.5.Q run25.Admix.k5.Q
-mv 1.5.1.oneSNP.Admix.6.Q run25.Admix.k6.Q
-mv 1.5.1.oneSNP.Admix.7.Q run25.Admix.k7.Q
-mv 1.5.1.oneSNP.Admix.8.Q run25.Admix.k8.Q
-mv 1.5.1.oneSNP.Admix.9.Q run25.Admix.k9.Q
-mv 1.5.1.oneSNP.Admix.10.Q run25.Admix.k10.Q
-mv 1.5.1.oneSNP.Admix.11.Q run25.Admix.k11.Q
+mv 1.5.1.oneSNP.Admix.1.P run25.Admix.k1.P \
+mv 1.5.1.oneSNP.Admix.2.P run25.Admix.k2.P \
+mv 1.5.1.oneSNP.Admix.3.P run25.Admix.k3.P \
+mv 1.5.1.oneSNP.Admix.4.P run25.Admix.k4.P \
+mv 1.5.1.oneSNP.Admix.5.P run25.Admix.k5.P \
+mv 1.5.1.oneSNP.Admix.6.P run25.Admix.k6.P \
+mv 1.5.1.oneSNP.Admix.7.P run25.Admix.k7.P \
+mv 1.5.1.oneSNP.Admix.8.P run25.Admix.k8.P \
+mv 1.5.1.oneSNP.Admix.9.P run25.Admix.k9.P \
+mv 1.5.1.oneSNP.Admix.10.P run25.Admix.k10.P \
+mv 1.5.1.oneSNP.Admix.11.P run25.Admix.k11.P \
+mv 1.5.1.oneSNP.Admix.12.P run25.Admix.k12.P \
+mv 1.5.1.oneSNP.Admix.1.Q run25.Admix.k1.Q \
+mv 1.5.1.oneSNP.Admix.2.Q run25.Admix.k2.Q \
+mv 1.5.1.oneSNP.Admix.3.Q run25.Admix.k3.Q \
+mv 1.5.1.oneSNP.Admix.4.Q run25.Admix.k4.Q \
+mv 1.5.1.oneSNP.Admix.5.Q run25.Admix.k5.Q \
+mv 1.5.1.oneSNP.Admix.6.Q run25.Admix.k6.Q \
+mv 1.5.1.oneSNP.Admix.7.Q run25.Admix.k7.Q \
+mv 1.5.1.oneSNP.Admix.8.Q run25.Admix.k8.Q \
+mv 1.5.1.oneSNP.Admix.9.Q run25.Admix.k9.Q \
+mv 1.5.1.oneSNP.Admix.10.Q run25.Admix.k10.Q \
+mv 1.5.1.oneSNP.Admix.11.Q run25.Admix.k11.Q \
 mv 1.5.1.oneSNP.Admix.12.Q run25.Admix.k12.Q
 
 	> Grab CV errors across runs so comparisons among runs can be made (I used Excel)
