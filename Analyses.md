@@ -1,10 +1,3 @@
-######################################
-Iceworm ddRAD analysis notebok
-Written by Scott Hotaling
-Scott.Hotaling@wsu.edu
-Last updated = 15 October 2018
-######################################
-
 ## 1. Demultiplexing the data
 	> Unpack the data:
 		tar -xzvf Iceworm_RawData_201829.tgz
