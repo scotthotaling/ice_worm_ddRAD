@@ -1,6 +1,6 @@
 ## 1. Demultiplexing the data
-	> Unpack the data:
-		tar -xzvf Iceworm_RawData_201829.tgz
+* Unpack the data:
+	* tar -xzvf Iceworm_RawData_201829.tgz
 	> Two libraries:
 		1 = ATCACG
 		2 = AGTCAA		
