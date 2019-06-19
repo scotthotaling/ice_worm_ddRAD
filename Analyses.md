@@ -1,31 +1,30 @@
 ## 1. Demultiplexing the data
 * Unpack the data:
 	* tar -xzvf Iceworm_RawData_201829.tgz
-	> Two libraries:
-		1 = ATCACG
-		2 = AGTCAA		
-	> Move each library to its own folder 
-	> Prepare demultiplex map file for each library (using process_radtags)
+	* Two libraries:
+		* 1 = ATCACG
+		* 2 = AGTCAA		
+	* Move each library to its own folder 
+	* Prepare demultiplex map file for each library (using process_radtags)
 
-/// Demultiplex with "process_radtags" [script = demultiplex_ice_worm.sh]
-	# -r = paired-end reads are interleaved in single files
-	# -c = “clean data” – removes any read with an uncalled base
-	# -q = reads with quality score below 10 (phred33) in a sliding window (15% length of the read) 
-	# are discarded 
+* Demultiplex with "process_radtags" [script = demultiplex_ice_worm.sh]
+	* -r = paired-end reads are interleaved in single files
+	* -c = “clean data” – removes any read with an uncalled base
+	* -q = reads with quality score below 10 (phred33) in a sliding window (15% length of the read) are discarded 
 
-process_radtags \
-        -f ~/1_ATCACG_L006_R1_001.fastq \
-        -o ~/Lib1_Demultiplex \
-        -b ~/L1-Iceworm-Demultiplex.txt \
-        --renz_1 nlaIII --renz_2 ecoRI -r -c -q --retain_header &
+* process_radtags \
+	* -f ~/1_ATCACG_L006_R1_001.fastq \
+	* -o ~/Lib1_Demultiplex \
+	* -b ~/L1-Iceworm-Demultiplex.txt \
+	* --renz_1 nlaIII --renz_2 ecoRI -r -c -q --retain_header &
 
-process_radtags \
-        -f ~/2_AGTCAA_L006_R1_001.fastq \
-        -o ~/Lib2_Demultiplex \
-        -b ~/L2-Iceworm-Demultiplex.txt \
-        --renz_1 nlaIII --renz_2 ecoRI -r -c -q --retain_header
+* process_radtags \
+	* -f ~/2_AGTCAA_L006_R1_001.fastq \
+	* -o ~/Lib2_Demultiplex \
+	* -b ~/L2-Iceworm-Demultiplex.txt \
+	* --renz_1 nlaIII --renz_2 ecoRI -r -c -q --retain_header
 
-// L1-Iceworm-Demultiplex.txt
+#### L1-Iceworm-Demultiplex.txt
 ATTAT	MS1
 CACCA	MS2
 CCTCG	MS3
@@ -59,7 +58,7 @@ ACGGTACT	MS30
 AAGACGCT	MS31
 TCAGAGAT	MS32
 
-// L2-Iceworm-Demultiplex.txt
+#### L2-Iceworm-Demultiplex.txt
 ATTAT	MS33
 CACCA	MS34
 CCTCG	MS35
@@ -84,14 +83,14 @@ CTCGCGG	MS55
 GCGTCCT	MS56
 GGAACGA	MS57
 TAGCCAA	MS58
-ACTGCGAT	MS59
-ATGAGCAA	MS61
-GCCTACCT	MS62
-TAGCGGAT	MS63
-TGACGCCA	MS64
-ACGGTACT	EA1
-AAGACGCT	MO1
-TCAGAGAT	MO3
+ACTGCGAT MS59
+ATGAGCAA MS61
+GCCTACCT MS62
+TAGCGGAT MS63
+TGACGCCA MS64
+ACGGTACT EA1
+AAGACGCT MO1
+TCAGAGAT MO3
 
 > Run it: sbatch -p Long -N 1 -n 16 demultiplex_ice_worm.sh
 	
