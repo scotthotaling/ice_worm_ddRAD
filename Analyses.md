@@ -378,38 +378,28 @@ mv 1.5.1.oneSNP.Admix.12.Q run25.Admix.k12.Q
 ##################################################################
 ## A simple R example for plotting fineRADstructure output
 ## Author: Milan Malinsky (millanek@gmail.com), adapted from a Finestructure R Example by Daniel Lawson (dan.lawson@bristol.ac.uk) and using his library of R functions
-## Date: 04/04/2016
-## Notes:
-##    These functions are provided for help working with fineSTRUCTURE output files
-## but are not a fully fledged R package for a reason: they are not robust
-## and may be expected to work only in some specific cases - often they may require 
-## at least minor modifications! USE WITH CAUTION!
-## SEE FinestrictureLibrary.R FOR DETAILS OF THE FUNCTIONS
-##
-## Licence: GPL V3
-## 
-##    This program is free software: you can redistribute it and/or modify
-##    it under the terms of the GNU General Public License as published by
-##    the Free Software Foundation, either version 3 of the License, or
-##    (at your option) any later version.
+Date: 04/04/2016
+#### Notes:
+These functions are provided for help working with fineSTRUCTURE output files but are not a fully fledged R package for a reason: they are not robust and may be expected to work only in some specific cases - often they may require at least minor modifications! USE WITH CAUTION! SEE FinestrictureLibrary.R FOR DETAILS OF THE FUNCTIONS
 
-##    This program is distributed in the hope that it will be useful,
-##    but WITHOUT ANY WARRANTY; without even the implied warranty of
-##    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-##    GNU General Public License for more details.
+##### Licence: GPL V3
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-##    You should have received a copy of the GNU General Public License
-##    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-### 1) EDIT THE FOLLOWING THREE LINES TO PROVIDE PATHS TO THE fineRADstructure OUTPUT 
+#### 1) EDIT THE FOLLOWING THREE LINES TO PROVIDE PATHS TO THE fineRADstructure OUTPUT 
 setwd("") ## The directory where the files are located
 chunkfile<-"" ## RADpainter output file
 mcmcfile<-"" ## finestructure mcmc file
 treefile<-".xml" ## finestructure tree file
-### 2) EDIT THIS PATH TO WHERE YOU WANT THE PLOTS:
+
+#### 2) EDIT THIS PATH TO WHERE YOU WANT THE PLOTS:
 plotsFolder <- "~/fineRAD_Plots"
-### 3) SET VALUES FOR THESE VARIABLES: "analysisName" will be included in output plots
+
+#### 3) SET VALUES FOR THESE VARIABLES: "analysisName" will be included in output plots
 analysisName <- "ice_worms_fineRAD";  maxIndv <- 10000; maxPop<-10000
 
 
