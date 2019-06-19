@@ -92,17 +92,17 @@ ACGGTACT EA1
 AAGACGCT MO1
 TCAGAGAT MO3
 
-> Run it: sbatch -p Long -N 1 -n 16 demultiplex_ice_worm.sh
+Run it: sbatch -p Long -N 1 -n 16 demultiplex_ice_worm.sh
 	
-> Combine demultiplexed libraries into one folder for downstream analysis		
-		>> mkdir Demultiplexed
-		>> [in Lib1_Demultiplex] cp *.fq ../Demultiplexed/
-		>> [in Lib2_Demultiplex] cp *.fq ../Demultiplexed/
+Combine demultiplexed libraries into one folder for downstream analysis		
+	* mkdir Demultiplexed
+		* [in Lib1_Demultiplex] cp *.fq ../Demultiplexed/
+		* [in Lib2_Demultiplex] cp *.fq ../Demultiplexed/
 
 
 ## 2. Running STACKS pipeline to call SNPs ("denovo_map")
 
-/// Demulti-plex with "process_radtags" (script = denovo_map.sh)
+> Demulti-plex with "process_radtags" (script = denovo_map.sh)
 
 denovo_map.pl -m 10 -n 2 -T 16 -b 1 -S \
 -D "de novo map ice worms" \
